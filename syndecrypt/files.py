@@ -25,7 +25,6 @@ def decrypt_file(input_file_name, output_file_name, password=None, private_key=N
                         if not os.path.isdir(os.path.dirname(output_file_name)):
                                 os.makedirs(os.path.dirname(output_file_name))
                         with open(output_file_name, 'wb') as outstream:
-                                import pdb; pdb.set_trace()
                                 core.decrypt_stream(instream, outstream, password=password, private_key=private_key, public_key=public_key)
         except:
                 LOGGER.error('decryption failed, exception occurred: %s: %s', sys.exc_info()[0], sys.exc_info()[1])

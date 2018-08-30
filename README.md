@@ -30,6 +30,8 @@ brew install lz4
 brew install python
 # check python 3
 python3 -v
+python3 -m venv ~/syndecrypt-venv
+source ~/syndecrypt-venv/bin/activate
 pip install -r syndecrypt/requirements.txt
 python Synology.py
 ```
