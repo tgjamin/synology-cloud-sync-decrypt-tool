@@ -23,6 +23,16 @@ clearly.
 source 'Synology Cloud Sync Decryption Tool', since I want to avoid doing
 things that might be construed to be illegal.)
 
+# INSTALL
+
+```
+brew install lz4
+brew install python
+# check python 3
+python3 -v
+pip install -r syndecrypt/requirements.txt
+python Synology.py
+```
 
 # Feedback
 

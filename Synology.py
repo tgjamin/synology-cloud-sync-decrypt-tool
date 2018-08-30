@@ -18,13 +18,6 @@ else:
     import tkinter.filedialog
     import tkinter.ttk
 
-if not os.path.isfile("/usr/local/bin/lz4"):
-    #os.system("""osascript -e 'do shell script "make install -C lz4-1.8.2/" with administrator privileges'""")
-    pid = os.system("""open -a InstallMeFirst""")
-    if pid == 0:
-        sys.exit(0)
-
-
 root = tk.Tk()
 root.title("Cloud Sync Decryption Tool")
 root.resizable(0,0)
